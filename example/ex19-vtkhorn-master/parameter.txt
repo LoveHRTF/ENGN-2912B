@@ -1,0 +1,38 @@
+OBLIQUELY TRUNCATED CONE: ----------------------------------
+
+cone opening angle: coa (one-sided, i.e., is half the opening angle!)
+
+cone wall thickness: cwt
+
+cutting plane center height (in z-dir): (0,0,cpch)
+
+cutting plan surface normal angle with z-axis, (rot. about y-ax): cpna
+
+EAR CANAL:  ------------------------------------------------
+
+canal insertion point on cone wall, cyl. coord.: cnlh & cnla
+
+canal length: cnll
+
+canal diameter: cnld
+
+
+FLAP: ------------------------------------------------------
+
+flap cut plane center height (in z-dir): fpch
+
+flap cut plane surface normal: fpnx,fpny,fpnz
+
+flap height: fh
+
+flap depth: fd
+
+flap center angle: fca
+
+
+OTHERS: ----------------------------------------------------
+
+boundaries for evaluation of implicit function: bnd 
+(min x, max x, min y, max y, min z, max z)
+
+voxel scale: scl (uniform in each direction)

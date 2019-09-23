@@ -1,0 +1,57 @@
+# OBLIQUELY TRUNCATED CONE: ----------------------------------
+# cone opening anglecone opening angle
+coa=
+
+#cone wall thickness: 
+cwt=
+
+#cutting plane center height (in z-dir): 
+cpch=
+
+#cutting plan surface normal angle with z-axis, (rot. about y-ax): 
+cpna=
+
+#EAR CANAL:  ------------------------------------------------
+
+#canal insertion point on cone wall, height:
+cnlh=
+
+#canal insertion point on cone wall, azimuth angle:
+cnla=
+
+#canal length:
+cnll=
+
+# canal diameter:
+cnld=
+
+
+#FLAP: ------------------------------------------------------
+
+#flap cut plane center height (in z-dir): 
+fpch=
+
+#flap cut plane surface normal (nx,ny,nz):
+fpn=
+
+#flap height:
+fh=
+
+#flap thickness:
+ft=
+
+#flap depth:
+fd=
+
+#flap center angle:
+fca=
+
+
+#OTHERS: ----------------------------------------------------
+
+#boundaries for evaluation of implicit function:
+#(min x, max x, min y, max y, min z, max z)
+bnd=
+
+voxel scale (uniform in each direction):
+scl=

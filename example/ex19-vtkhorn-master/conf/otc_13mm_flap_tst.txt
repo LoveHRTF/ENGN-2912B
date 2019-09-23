@@ -1,0 +1,65 @@
+# total height: ~1.3cm
+# f: 30 - 50 kHz  6 - 11 mm wavlength
+# spacing 100 micrometers (60 el/wavelength)
+# below all lengths are in meter, all angles in degree
+
+# OBLIQUELY TRUNCATED CONE: ----------------------------------
+# cone opening anglecone opening angle (one-sided)
+coa=30
+
+#cone wall thickness:
+cwt=0.001
+
+#cutting plane center height (in z-dir): 
+cpch=.006
+# 0.75 cm
+
+#cutting plan surface normal angle with z-axis, (rot. about y-ax): 
+cpna=40
+
+#EAR CANAL:  ------------------------------------------------
+
+#canal insertion point on cone wall, height:
+cnlh=0.0025
+
+#canal insertion point on cone wall, azimuth angle:
+cnla=0
+
+#canal length:
+cnll=0.004
+
+# canal diameter:
+cnld=0.001
+
+
+#FLAP: ------------------------------------------------------
+
+#flap cut plane center height (in z-dir): 
+fpch=0.005
+
+#flap cut plane surface normal (nx,ny,nz):
+fpn=0.5,0.35,0.866
+
+#flap height:
+fh=0.0006
+
+#flap thickness:
+ft=0.0007
+
+#flap depth:
+fd=0.004
+
+#flap center angle:
+fca=115
+
+
+#OTHERS: ----------------------------------------------------
+
+#boundaries for evaluation of implicit function:
+#(min x, max x, min y, max y, min z, max z)
+bnd=-0.009,0.005,-0.0055,0.0055,0,0.014
+
+#voxel scale (uniform in each direction):
+scl=0.00015
+#final version: scl=0.0001
+# 100 micrometer
