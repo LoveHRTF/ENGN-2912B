@@ -1,0 +1,5 @@
+build
+data/*.data
+data/*.zip
+*.swp
+*.gch

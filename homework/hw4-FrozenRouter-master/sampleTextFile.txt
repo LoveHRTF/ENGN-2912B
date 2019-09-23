@@ -1,0 +1,19 @@
+        The minute I compiled my first C++ program, I knew for sure this
+language was the one for me. I've tried all different types of
+languages, PHP, Visual Basic, C. But when I met C++, it gave me an
+inner feeling that no other language has ever gave me before. The
+feeling was excitement, euphoria, a sense of "this is where I
+belong". C++, I love you. 
+
+	I will concede this much: if you don't know what you're
+doing, C++ is probably easier to misuse than other languages. 
+However, in the hands of the experienced programmer, C++ can be a 
+very versatile and powerful tool.
+
+	Many people see choosing a language as a tradeoff between performance and expressiveness. The prototypical choices are C on the one hand (fast because it's close to the machine, but lacking high-level constructs that facilitate abstraction, like classes, inheritance, polymorphism, and generics/templates) and languages like Java, C#, or python on the other hand (slower because they are interpreted or run through a virtual machine, but having these high-level constructs). 
+
+	In C++, there is no tradeoff -- you have both the performance of C, and
+the convenience of high-level features. Unlike Java, C#, or python,
+C++ does not impose a performance overhead for high-level features.
+
+

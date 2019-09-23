@@ -1,0 +1,26 @@
+sudo: false
+language: cpp
+compiler:
+  - gcc
+os:
+  - linux
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-4.8
+    - g++-4.8
+
+before install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update          ; fi
+install:
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
+script:
+  - mkdir build
+  - cd build
+  - cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make
+  - ./hw1Tests/basicTests/runBasicHW1Tests
+  - ./hw1Tests/01_HelloTests/01_runHW1HelloTests
+  - ./hw1Tests/02_IntegerSummationTests/02_runHW1IntegerSummationTests

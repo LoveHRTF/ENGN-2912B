@@ -1,0 +1,31 @@
+sudo: false
+language: cpp
+compiler:
+  - gcc
+os:
+  - linux
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-7
+    - g++-7
+
+before install:
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-7" CC="gcc-7"; fi
+
+script:
+  - bash ./downloadData.sh
+  - mkdir build
+  - cd build
+  - wget https://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.bz2
+  - tar --bzip2 -xf boost_1_63_0.tar.bz2
+  - cd boost_1_63_0
+  - ./bootstrap.sh --with-libraries=filesystem,iostreams,regex,system --prefix=./
+  - ./b2 install 2>&1 1>/dev/null
+  - cd ..
+  - cmake -D CMAKE_CXX_COMPILER=g++-7 ..
+  - make
+  - ./hw6Tests/01_DNAPatternTests/01_runHW6DNAPatternTests
